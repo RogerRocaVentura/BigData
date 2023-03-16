@@ -6,7 +6,6 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 
 import numpy as np
-import pandas as pd
 
 from sklearn.metrics import ConfusionMatrixDisplay
 
