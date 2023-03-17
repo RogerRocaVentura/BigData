@@ -22,7 +22,7 @@ data = pd.read_csv("basket.csv")
 data.head()
 
 records = []
-for i in range(0, 9834): #Sé que no t'agrada veure els for forçats d'aquesta manera
+for i in range(0, 9834): #Can be done with len too 
     records.append([str(data.values[i,j]) for j in range(0, 31)])
     
 association_rules = apriori(records, min_support=0.010, min_confidence=0.2, min_lift=3, min_length=4)
